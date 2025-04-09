@@ -3,11 +3,13 @@ import { CallToAction } from "@/components/sections/callToAction/page";
 import FeaturesSection from "@/components/sections/features/page";
 import { FooterSection } from "@/components/sections/footer/page";
 import { HeroSectionMain } from "@/components/sections/hero/page";
+import PricingSection from "@/components/sections/pricing/page";
 import TrustedBySection from "@/components/sections/trustedby/default";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Vibio | CRM Conversacional para WhatsApp, Instagram y Ventas Automatizadas",
+  title:
+    "Vibio | CRM Conversacional para WhatsApp, Instagram y Ventas Automatizadas",
   description:
     "Vibio es el CRM conversacional que te ayuda a automatizar WhatsApp, Instagram y más. Centraliza tus chats, optimiza la atención al cliente y aumenta tus ventas sin perder el toque humano.",
   openGraph: {
@@ -19,13 +21,12 @@ export const metadata: Metadata = {
     siteName: "Vibio CRM",
     images: [
       {
-        url: "/og.png", 
+        url: "/og.png",
         width: 1200,
         height: 630,
         alt: "Vibio CRM - Vibio lo hace fácil",
       },
     ],
-
   },
   twitter: {
     card: "summary_large_image",
@@ -33,7 +34,6 @@ export const metadata: Metadata = {
     description:
       "Vibio es el CRM conversacional que te ayuda a automatizar WhatsApp, Instagram y más. Centraliza tus chats, optimiza la atención al cliente y aumenta tus ventas sin perder el toque humano.",
   },
-
 };
 
 export default function Home() {
@@ -51,6 +51,10 @@ export default function Home() {
 
         <div>
           <FeaturesSection />
+        </div>
+
+        <div>
+          <PricingSection />
         </div>
 
         <div>

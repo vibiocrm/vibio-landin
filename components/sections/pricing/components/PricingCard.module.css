@@ -1,0 +1,157 @@
+.popularCard {
+  position: relative;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid transparent;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+      circle at top left,
+      rgba(5, 109, 248, 0.15) 0%,
+      rgba(5, 109, 248, 0) 50%
+    );
+    z-index: 0;
+  }
+}
+
+.standardCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glowOrb {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(5, 109, 248, 0.2) 0%,
+    rgba(5, 109, 248, 0) 70%
+  );
+  z-index: 0;
+  filter: blur(15px);
+}
+
+.gradientBorder {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(5, 109, 248, 0.1),
+    rgba(5, 109, 248, 0.6),
+    rgba(5, 109, 248, 0.1)
+  );
+  margin: 16px 0;
+}
+
+.checkIconBg {
+  background: radial-gradient(
+    circle,
+    rgba(5, 109, 248, 0.3),
+    rgba(5, 109, 248, 0.1)
+  );
+  box-shadow: 0 0 8px rgba(5, 109, 248, 0.3);
+}
+
+.checkIcon {
+  color: #056df8;
+  filter: drop-shadow(0 0 2px rgba(5, 109, 248, 0.5));
+}
+.standardButton {
+  background: linear-gradient(90deg, #171717, #262626);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(126, 126, 126, 0.5);
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 1s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      left: 100%;
+    }
+  }
+}
+
+.gradientButton {
+  background: linear-gradient(90deg, #056df8, #034abf);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  border: none;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    transition: left 2s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    box-shadow: 0 0 200px rgba(5, 109, 248, 0.5);
+
+    &::before {
+      left: 100%;
+    }
+  }
+}
+
+.standardCard {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: radial-gradient(
+      ellipse at center top,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.1) 40%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    z-index: 0;
+    pointer-events: none;
+  }
+}
