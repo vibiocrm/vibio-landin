@@ -49,7 +49,6 @@ export default function PricingSection() {
             description={plan.description}
             features={plan.features}
             popular={plan.popular}
-            onClick={() => alert(`Selected ${plan.plan} plan`)}
           />
         ))}
       </div>
