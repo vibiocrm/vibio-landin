@@ -67,10 +67,10 @@ export default function FeaturesSection() {
                           >
                             <div className="relative z-10">
                               <Image
-                                src="/logo-empty.png"
+                                src="/logo-empty.webp"
                                 alt="Logo"
-                                width={25}
-                                height={25}
+                                width={45}
+                                height={45}
                               />
                             </div>
                           </div>

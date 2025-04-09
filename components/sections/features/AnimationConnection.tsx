@@ -11,7 +11,7 @@ export const AnimationConnection = ({
     <div className="w-16 h-16 ml-30 bg-green-500/10  rounded-full flex items-center justify-center relative">
       {/* Icono */}
       <Image
-        src={"/logo.png"}
+        src={"/logo.webp"}
         alt="wbot-icon"
         width={32}
         height={32}

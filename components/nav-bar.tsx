@@ -41,11 +41,11 @@ export function NavBar({
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              className="flex items-center justify-center w-8 h-8 rounded-md bg-gradient-to-br from-blue-500 to-blue-600 text-white font-bold"
-              src="/logo.png"
+              className="flex items-center justify-center rounded-md"
+              src="/logo.webp"
               alt="Vibio Logo"
-              width={32}
-              height={32}
+              width={38}
+              height={38}
             />
 
             <span className="text-lg font-medium hidden md:inline-block">

@@ -1,7 +1,6 @@
-import Github from "@/components/logos/github";
+
 import { Footer } from "@/components/ui/footer";
-import { TwitterLogoIcon } from "@radix-ui/react-icons";
-import { Facebook, Hexagon } from "lucide-react";
+import { Facebook } from "lucide-react";
 
 export const FooterSection = () => {
   return (
