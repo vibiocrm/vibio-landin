@@ -1,6 +1,5 @@
 "use client";
 
-import { AuroraText } from "@/components/magicui/aurora-text";
 import { GridPattern } from "@/components/magicui/grid-pattern";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";

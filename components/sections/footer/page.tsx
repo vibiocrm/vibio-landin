@@ -5,7 +5,6 @@ import { Facebook } from "lucide-react";
 export const FooterSection = () => {
   return (
     <Footer
-      logo=""
       brandName="Vibio"
       socialLinks={[
         {

@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { AnimationConnection } from "./AnimationConnection";
 import Image from "next/image";
 
 export default function FeaturesSection() {

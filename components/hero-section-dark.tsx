@@ -4,9 +4,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { ContainerScroll } from "./ui/container-scroll-animation";
 import Image from "next/image";
-import { ShimmerButton } from "./ui/shimmer-button";
 
 interface HeroSectionProps extends React.HTMLAttributes<HTMLDivElement> {
   title?: string;
