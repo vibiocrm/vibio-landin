@@ -1,13 +1,11 @@
 "use client";
 
-import { GridPattern } from "@/components/magicui/grid-pattern";
-import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 
 export function CallToAction() {
   return (
     <div className="relative flex min-h-[400px] md:h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-8 md:py-12 px-4 md:px-6">
-      <GridPattern
+      {/* <GridPattern
         squares={[
           [4, 4],
           [5, 1],
@@ -26,7 +24,7 @@ export function CallToAction() {
           "[mask-image:radial-gradient(600px_circle_at_center,white,transparent)] ",
           "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
         )}
-      />
+      /> */}
       
       <div className="relative z-10 text-center max-w-3xl mx-auto">
         <div className="flex flex-col md:flex-row justify-center font-serif gap-2 items-center mb-4">

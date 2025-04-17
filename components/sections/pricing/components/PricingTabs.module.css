@@ -1,0 +1,140 @@
+.tabsContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 3px;
+  border-radius: 10px;
+
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  box-shadow: 0 0 20px rgba(23, 96, 252, 0.3);
+  overflow: hidden;
+}
+
+.glowBackground {
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(
+    from 225deg at 50% 50%,
+    rgb(23, 96, 252),
+    rgb(64, 153, 255),
+    rgb(23, 96, 252)
+  );
+  opacity: 0.6;
+  filter: blur(35px);
+  animation: rotate 10s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tabsInner {
+  display: flex;
+  background-color: rgba(15, 15, 20, 0.8);
+  border-radius: 8px;
+  padding: 4px;
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+.tab {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  transition: all 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.tabInactive {
+  color: #9c9c9c;
+}
+
+.tabInactive:hover {
+  color: #ffffff;
+  background-color: rgba(23, 96, 252, 0.1);
+  box-shadow: 0 0 15px rgba(23, 96, 252, 0.15);
+}
+
+.tabActive {
+  color: #ffffff;
+  background-color: rgba(23, 96, 252, 0.2);
+  box-shadow: 0 0 15px rgba(23, 96, 252, 0.4),
+    inset 0 0 8px rgba(23, 96, 252, 0.2);
+}
+
+.activeGlow {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0;
+  animation: pulseGlow 2s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes pulseGlow {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.tabContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .tabContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.tabContentEntering {
+  opacity: 0;
+  transform: translateY(5px);
+}
+
+.tabContentEntered {
+  opacity: 1;
+  transform: translateY(0);
+}

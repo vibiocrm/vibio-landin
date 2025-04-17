@@ -177,7 +177,7 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
                   delay: 0.5,
                   ease: [0.16, 1, 0.3, 1],
                 }}
-                className="mt-96 mx-10 relative z-10"
+                className="mt-40 md:mt-96 mx-10 relative z-10"
               >
                 <motion.div
                   initial={{ opacity: 0 }}

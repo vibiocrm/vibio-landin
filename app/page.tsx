@@ -45,9 +45,9 @@ export default function Home() {
           <HeroSectionMain />
         </div>
 
-        <div>
+        {/* <div>
           <TrustedBySection />
-        </div>
+        </div> */}
 
         <div>
           <FeaturesSection />
