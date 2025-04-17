@@ -30,8 +30,17 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Vibio CRM - Vibio lo hace fácil",
+    site: "@vibio",
     description:
       "Vibio es el CRM conversacional que te ayuda a automatizar WhatsApp, Instagram y más. Centraliza tus chats, optimiza la atención al cliente y aumenta tus ventas sin perder el toque humano.",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Vibio CRM - Vibio lo hace fácil",
+      },
+    ],
   },
 };
 
