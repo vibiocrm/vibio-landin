@@ -4,7 +4,6 @@ import FeaturesSection from "@/components/sections/features/page";
 import { FooterSection } from "@/components/sections/footer/page";
 import { HeroSectionMain } from "@/components/sections/hero/page";
 import PricingSection from "@/components/sections/pricing/page";
-
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
