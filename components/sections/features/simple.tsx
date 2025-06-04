@@ -40,19 +40,21 @@ const features = [
 
 export default function SimpleFeatures() {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900">
+    <section className="bg-white dark:bg-gray-950">
       <div className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">Todo lo que necesitas</h2>
-        <div className="grid auto-rows-[220px] gap-6 md:grid-cols-3">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">
+          Todo lo que necesitas
+        </h2>
+        <div className="grid grid-cols-2 auto-rows-[220px] gap-6 md:grid-cols-3 md:auto-rows-[250px]">
           {features.map((feature) => (
             <div
               key={feature.title}
               className={cn(
-                "rounded-2xl border border-border bg-white/70 dark:bg-gray-950/40 p-6 flex flex-col",
+                "rounded-2xl border border-border bg-gray-50 dark:bg-neutral-900 p-6 flex flex-col shadow-sm",
                 feature.className
               )}
             >
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 text-white mb-4">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-[#006EEE] to-[#49A1FF] text-white mb-4">
                 <feature.icon className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-medium">{feature.title}</h3>

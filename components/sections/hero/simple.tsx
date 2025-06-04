@@ -11,7 +11,7 @@ export default function SimpleHero() {
           Organiza tus conversaciones y potencia tus ventas con una plataforma simple y poderosa.
         </p>
         <div className="mt-8">
-          <Button asChild className="bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+          <Button asChild className="bg-gradient-to-r from-[#006EEE] to-[#49A1FF] text-white">
             <a href="https://wa.me/573053105505">Agenda una demo</a>
           </Button>
         </div>
